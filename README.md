@@ -36,3 +36,9 @@
     - git history diff
     - live Server
     - Path Intellisense
+
+## 助理理解
+
+我这个项目没打tag(我还不会),可以通过commit历史记录进入项目的各个历史阶段，这样你就能知道项目是怎么一步步搭建起来的。其中要说明的是我的文件结构与官网不同，是根据我自己的理解;另外每个报错、每次添加我都加入了自己的理解。可能这些理解方式不够正确,如果你也是ng1的初学者可以fork这个项目加入自己的理解,最好跟着跑一遍。
+
+- [angular术语表](https://docs.angularjs.org/guide/concepts) 更多术语穿插在本项目的commit的评论中,深入理解需要多加练习和多阅读其他人的文章
