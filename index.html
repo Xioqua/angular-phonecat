@@ -20,7 +20,7 @@
                 Sort by:
                 <select ng-model="orderProp">
                     <option value="name">Alphabetical</option>
-                    <option value="age" selected>Newest</option>
+                    <option value="age">Newest</option>
                 </select>
             </div>
             <div class="span10">
@@ -29,12 +29,12 @@
                 <ul class="phones">
                     <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
                         {{phone.name}}
-                        <p>{{phone.snippet}}</p>
-                    </li>
-                </ul>
+                    <p>{{phone.snippet}}</p>
+                </li>
+</ul>
 
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </body>
 </html>
