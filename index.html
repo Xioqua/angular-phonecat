@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="phonecatApp"  ng-controller="PhoneListCtrl">
+<html lang="en" ng-app="phonecatApp" ng-controller="PhoneListCtrl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,16 @@
     <script src="js/controllers.js"></script>
     <title>{{ query }}</title>
 </head>
+
 <body>
-    
+
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span2">
-                
+
                 <!--Sidebar content-->
-                Search: <input ng-model="query">
-                Sort by:
+                Search:
+                <input ng-model="query"> Sort by:
                 <select ng-model="orderProp">
                     <option value="name">Alphabetical</option>
                     <option value="age">Newest</option>
@@ -30,12 +32,13 @@
                 <ul class="phones">
                     <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
                         {{phone.name}}
-                    <p>{{phone.snippet}}</p>
-                </li>
-</ul>
+                        <p>{{phone.snippet}}</p>
+                    </li>
+                </ul>
 
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
